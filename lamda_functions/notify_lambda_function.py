@@ -1,7 +1,8 @@
 import json
 import requests
+import os
 
-slack_webhook_url = 'https://hooks.slack.com/services/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'
+slack_webhook_url = os.getenv('webhook_url')
 
 def lambda_handler(event, context):
     try:
